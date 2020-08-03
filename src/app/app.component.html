@@ -134,6 +134,18 @@
           <td> {{fecha | date: 'MMMM - dd' : '' : idioma }}</td>
         </tr>
 
+        <tr>
+          <td>{{ nombre }}</td>
+          <td>
+            contraseña: {{activar}}
+            <br>
+            <button class="btn btn-warning"  (click)="activar = !activar">
+              Activar/Desactivar
+            </button>
+          </td>
+          <td> {{ nombre | contrasena : activar }}</td>
+        </tr>
+
         <h3>JSON</h3>
         <hr>
         <div>
